@@ -14,3 +14,8 @@
  ... <br/>
  Readme.md <br/>
  
+Create a database named 'project' <br/>
+Create two tables cards_data and users_data <br/>
+Import the csv file into cards_data <br/>
+
+
