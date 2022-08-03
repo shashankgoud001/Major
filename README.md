@@ -2,7 +2,7 @@
  Skill Vertex Project
  # Wedding Planner Website
  
- ->assets
+ ->assets <br/>
  ->css
  ->fontawesome
  ->js
