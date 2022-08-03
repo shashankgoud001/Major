@@ -1188,13 +1188,6 @@ color: #f8ce0b;
 /* write media query for width <500 to change background image */
 
 @media screen and (max-width: 500px) {
-    .home-page{
-        background: url("../assets/imgs/7.png");
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-        background-size: cover;
-    }
     .container .card .element p{
         font-size: 1.25rem;
     }
