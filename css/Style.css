@@ -35,6 +35,10 @@ h1{
 .navbar .logo a{
     text-decoration: none;
 }
+.navbar .logo a img{
+    /* height: 1000px; */
+    width: 100px;
+}
 
 .navbar .logo a{
     color: black;
@@ -1208,11 +1212,12 @@ color: #f8ce0b;
         flex-direction: column;
         flex: 25%;
     } */
-    /* .container .card .element p{
+    .home .card .element p{
         font-size: 1rem;
         margin-left: 5%;
         padding-left: 15%;
-    } */
+        font-weight: 500;
+    }
     .container .card .element img{
         width: 55%;
     }

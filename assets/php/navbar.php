@@ -38,7 +38,7 @@
 </script>
 <nav class="navbar">
     <div class="logo">
-        <a href="index.php">Happy Wedding</a>
+        <a href="index.php"><img src="./assets/imgs/logo.png" alt=""></a>
     </div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
