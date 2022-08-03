@@ -85,7 +85,7 @@
         <div class="card">
             <a class="element" href="jewelry.php">
                 
-                <p>Jewlery</p>
+                <p>Jewelry</p>
                 <img src="./assets/imgs/jewelry1.png" alt="">
             </a>
         </div>

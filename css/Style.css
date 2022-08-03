@@ -731,7 +731,23 @@ span.signup a:hover{
     padding: 1%;
     font-size: large;
     color: white;
+    cursor: pointer;
 }
+
+.commonCartCard input{
+    border: none;
+    background: none;
+    color: red;
+    cursor: pointer;
+    padding: 5%;
+    font-size: 100%;
+}
+
+.commonCartCard input:hover{
+    background: red;
+    color: white;
+}
+
 /* Cart Page Ends Here */
 /* Services Page Starts Here */
 

@@ -25,7 +25,7 @@
             </a>
           </p>
           <p>
-            <a href="jewlery.php">
+            <a href="jewelry.php">
               Jewlery
             </a>
           </p>
