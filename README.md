@@ -3,14 +3,14 @@
  # Wedding Planner Website
  
  ->assets <br/>
- ->css
- ->fontawesome
- ->js
- ->vendors
- bridalwear.php
- cakes.php
- ...
- index.php
- ...
- Readme.md
+ ->css <br/>
+ ->fontawesome <br/>
+ ->js <br/>
+ ->vendors <br/>
+ bridalwear.php <br/>
+ cakes.php <br/>
+ ... <br/>
+ index.php <br/>
+ ... <br/>
+ Readme.md <br/>
  
