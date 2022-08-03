@@ -1,0 +1,129 @@
+id,typename,count,title,stars,location,venueType,people_range,cost
+1,venue,1,The White Dove Events Place,4.5,Hyderabad,Resort,1000,5000
+2,venue,2,The Sunset View,3.5,Delhi,Hotel,2000,7000
+3,venue,3,Infinity Events Place,2,Banglore,Hotel,1500,2000
+4,venue,4,The Sandbar,5,Hyderabad,Function Hall,3000,8000
+5,venue,5,White Castle,3.2,Hyderabad,Resort,1200,3000
+6,venue,6,Honeycomb Function Rooms,1.8,Banglore,Resort,2200,5000
+7,venue,7,The View,4.8,Banglore,Hotel,3500,10000
+8,venue,8,Sands and Rocks,3.3,Delhi,Function Hall,1000,1000
+9,venue,9,High Gardens,4.1,Kolkata,Hotel,1300,4000
+10,venue,10,Sky Castles,3,Kolkata,Resort,1750,6500
+11,venue,11,Glass Gardens,5,Delhi,Resort,500,1000
+12,venue,12,Emerald Gardens,2.2,Mumbai,Function Hall,5000,15000
+13,decoration,1,Blue Sea Events,4.5,Kolkata,none,none,2000
+14,decoration,2,Dreamstrokes,3.5,Kolkata,none,none,1000
+15,decoration,3,Jugaad,2,Delhi,none,none,5000
+16,decoration,4,Flinters Management,5,Mumbai,none,none,600
+17,decoration,5,Wedding Walla,3.2,Kolkata,none,none,9000
+18,decoration,6,The Party Walla,1.8,Hyderabad,none,none,700
+19,decoration,7,Glittering Arc,4.8,Delhi,none,none,12000
+20,decoration,8,Blossom Barn   ,3.3,Banglore,none,none,8700
+21,decoration,9,Celebration Hall    ,4.1,Hyderabad,none,none,1240
+22,decoration,10,The I Do Corner   ,3,Hyderabad,none,none,6500
+23,decoration,11,The Love Conservatory   ,5,Hyderabad,none,none,2500
+24,decoration,12,Lakeside Lodge   ,2.2,Banglore,none,none,720
+25,decoration,13,Maison d’Amour   ,1.5,Banglore,none,none,1290
+26,decoration,14,The Sanctuary   ,2.7,Delhi,none,none,3210
+27,decoration,15,Castaway Island   ,4.8,Kolkata,none,none,9090
+28,decoration,16,Lovers’ Paradise     ,3.9,Kolkata,none,none,750
+29,decoration,17,Fairy Tale Cottage   ,2.1,Delhi,none,none,1500
+30,decoration,18,Happy End Ranch   ,5,Mumbai,none,none,2400
+31,decoration,19,Skylight Peak ,4.1,Kolkata,none,none,1349
+32,decoration,20,The Mirror’s Edge,2.9,Delhi,none,none,899
+33,cakes,1,Yellow Butter Cake,5,none,none,none,200
+34,cakes,2,Pound Cake,2.2,none,none,none,150
+35,cakes,3,Red Velvet Cake,4.5,none,none,none,700
+36,cakes,4,Carrot Cake,3.5,none,none,none,280
+37,cakes,5,Sponge Cake,2,none,none,none,150
+38,cakes,6,Genoise Cake,5,none,none,none,340
+39,cakes,7,Chiffon Cake,3.2,none,none,none,270
+40,cakes,8,Angel Food Cake,1.8,none,none,none,640
+41,cakes,9,Flourless Cake,4.8,none,none,none,889
+42,cakes,10,Fruit Cake,3.3,none,none,none,1000
+43,photographers,1,Film Photography ,4.8,Hyderabad,none,none,300
+44,photographers,2,Vertical Lens Pro ,3.9,Kolkata,none,none,290
+45,photographers,3,Star Photography ,2.1,Mumbai,none,none,500
+46,photographers,4,Digital Photographer ,5,Bangalore,none,none,750
+47,photographers,5,Classic Shooters,4.1,Hyderabad,none,none,190
+48,photographers,6,Photo Group ,2.9,Bangalore,none,none,280
+49,bridalwear,1,Dreamy Lace Dress,3.2,none,none,none,450
+50,bridalwear,2,Vision in Tulle,1.8,none,none,none,700
+51,bridalwear,3,Timeless Elegance,4.8,none,none,none,250
+52,bridalwear,4,Floral Number,3.3,none,none,none,199
+53,bridalwear,5,Balloon Sleeves,4.8,none,none,none,580
+54,bridalwear,6,Minimalist Design,3.9,none,none,none,270
+55,bridalwear,7, Fashion-Forward,5,none,none,none,500
+56,bridalwear,8,Ball Gown Fit,4.1,none,none,none,750
+57,bridalwear,9,Unconventional Hue,4.2,none,none,none,320
+58,bridalwear,10,Double in White,3.9,none,none,none,180
+59,bridalwear,11,Glittery Red Lehenga,4,none,none,none,600
+60,catering,1,Taste & Fun Catering,4.5,Banglore,none,none,300
+61,catering,2,Duos Workers,3.5,Delhi,none,none,290
+62,catering,3,Max Ultimate Food,2,Kolkata,none,none,500
+63,catering,4,Crimsom Caters,5,Hyderabad,none,none,750
+64,catering,5,Taste Ming,3.2,Delhi,none,none,190
+65,catering,6,Triangle Love,1.8,Mumbai,none,none,280
+66,catering,7,Golden hands,4.8,Kolkata,none,none,450
+67,catering,8,Oak Leaf,3.3,Hyderabad,none,none,700
+68,catering,9,I Do Catering,4.8,Delhi,none,none,250
+69,catering,10,American Service,4.1,Mumbai,none,none,650
+70,makeup,1,Fancy Faces,4.1,Banglore,none,none,300
+71,makeup,2,Bella Beauty,2.9,Delhi,none,none,290
+72,makeup,3,Pink Beauty,3.2,Kolkata,none,none,500
+73,makeup,4,Eyelash Queen,1.8,Hyderabad,none,none,750
+74,makeup,5,Face of Beauty,4.8,Delhi,none,none,190
+75,makeup,6,Beauty Express,3.3,Mumbai,none,none,280
+76,makeup,7,Glam Nation,4.8,Kolkata,none,none,450
+77,makeup,8,Glitz and Glitter,3.9,Hyderabad,none,none,700
+78,makeup,9,Glam Alert,5,Delhi,none,none,250
+79,makeup,10,Blush Addict,4.1,Mumbai,none,none,650
+80,groomwear,1,Anarkali Sherwani,4.1,none,none,none,280
+81,groomwear,2,Velvet Splendour,3,none,none,none,450
+82,groomwear,3,Peaches and Golds,5,none,none,none,700
+83,groomwear,4,The Floral Stole,2.2,none,none,none,250
+84,groomwear,5,Flared Jacket Sherwani,1.5,none,none,none,650
+85,groomwear,6,Off-White Sherwani,2.7,none,none,none,300
+86,groomwear,7,Layered Look,4.8,none,none,none,290
+87,groomwear,8,Bandh Gaya suit,3.9,none,none,none,500
+88,groomwear,9,Dhoti Kurta Style ,2.1,none,none,none,750
+89,groomwear,10, Two-layer Sherwani,5,none,none,none,190
+90,groomwear,11,Achkan Sherwani,4.1,none,none,none,280
+91,jewlery,1,Bolo tie,4.8,Mumbai,none,none,2000
+92,jewlery,2,Carcanet,3.3,Banglore,none,none,3000
+93,jewlery,3,Choker,4.8,Delhi,none,none,2500
+94,jewlery,4,Necklace,3.9,Kolkata,none,none,7000
+95,jewlery,5,Pendant,5,Hyderabad,none,none,5000
+96,jewlery,6,Torc,4.1,Delhi,none,none,8999
+97,jewlery,7,Engagement ring,4.1,Mumbai,none,none,7800
+98,jewlery,8,Nawarat ring,3,Kolkata,none,none,4300
+99,jewlery,9,Pre-engagement ring,5,Hyderabad,none,none,2900
+100,jewlery,10,Wedding ring,2.2,Delhi,none,none,3200
+101,honeymoon,1,Hotel Bliss,4.1,Mumbai,none,none,750
+102,honeymoon,2,University Inn,4.6,Banglore,none,none,1500
+103,honeymoon,3,The New View,2.9,Delhi,none,none,2400
+104,honeymoon,4,Ramada Limited & Suites,3.2,Kolkata,none,none,1349
+105,honeymoon,5,Sunset Lodge,1.8,Hyderabad,none,none,899
+106,honeymoon,6,Hotel Elite,4.8,Delhi,none,none,1200
+107,honeymoon,7,Lake Place Inn,3.3,Mumbai,none,none,900
+108,honeymoon,8,Beacon Motel,4.8,Kolkata,none,none,700
+109,honeymoon,9,Comfort B&B,3.9,Hyderabad,none,none,2300
+110,honeymoon,10,The Fresco Hotel,5,Delhi,none,none,3000
+111,customer,1,none,0,none,none,none,0
+112,customer,2,none,0,none,none,none,0
+113,customer,3,none,0,none,none,none,0
+114,customer,4,none,0,none,none,none,0
+115,customer,5,none,0,none,none,none,0
+116,customer,6,none,0,none,none,none,0
+117,customer,7,none,0,none,none,none,0
+118,customer,8,none,0,none,none,none,0
+119,customer,9,none,0,none,none,none,0
+120,customer,10,none,0,none,none,none,0
+121,customer,11,none,0,none,none,none,0
+122,customer,12,none,0,none,none,none,0
+123,customer,13,none,0,none,none,none,0
+124,customer,14,none,0,none,none,none,0
+125,customer,15,none,0,none,none,none,0
+126,customer,16,none,0,none,none,none,0
+127,customer,17,none,0,none,none,none,0
+128,customer,18,none,0,none,none,none,0
