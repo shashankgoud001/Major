@@ -1,0 +1,1219 @@
+*{
+    text-decoration: none ;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 300%;
+    margin: 0;
+}
+
+
+/* Generic things start here */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 50%;
+}
+
+.navbar .logo{
+    margin-left: 5%;
+}
+.navbar .logo a{
+    text-decoration: none;
+}
+
+.navbar .logo a{
+    color: black;
+}
+
+.navbarlinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbarlinks li{
+    list-style:none;
+    transition: 0.4s ease-in;
+}
+
+.navbarlinks li a{
+    text-decoration: none;
+    color:black;
+    padding: 1rem;
+    display: block;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+.navbarlinks li:hover{
+    background-color: #00c8fd;
+    color: white;
+    transition: 0.4s ease-in;
+}
+.navbarlinks li:hover a{
+    color: white;
+    transition: 0.4s ease-in;
+}
+
+.toggle-button{
+    position: absolute;
+    padding: 0.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.1rem;
+    width: 1.5rem;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width:800px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbarlinks{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbarlinks ul{ 
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbarlinks ul li{
+        text-align: center;
+    }
+    .navbarlinks ul li a{
+        padding: 0.5rem 1rem;
+    }
+    .navbarlinks.active{
+        display: flex;
+    }
+}
+
+
+
+
+.commonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.commonContainer .commonCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin: 3%;
+    width: 300px;
+    overflow: hidden;
+    /* height: 900px; */
+    cursor: pointer;
+}
+
+.commonContainer .commonCard img{
+    height: 200px;
+    flex-grow: 2;
+    width: 100%;
+}
+
+.commonContainer .commonCard .commonContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 40%; */
+    /* width: 100%; */
+    flex-grow: 3;
+}
+
+.commonContainer .commonCard .commonName{
+    font-size: 22px;
+}
+
+.commonContainer .commonCard .commonBuy{
+    height: 50px;
+    width: 100%;
+    margin-top: 5%;
+    background: gold;
+    border: none;
+    padding: 2%;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+.commonContainer .commonCard .commonBuy:hover{
+    opacity: 0.5;
+    transition: 0.4s ease;
+}
+
+.commonContainer .commonCard form{
+    width: 100%;
+}
+
+.commonCartCard{
+    width: 100%;
+
+}
+.commonCartCard th{
+    height: 20%;
+    width: 20%;
+}
+.commonCartCard img{
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+}
+
+.bridalweardataContainer .commonContainer .commonCard{
+    height: 500px;
+}
+
+.bridalweardataContainer .commonContainer .commonCard img{
+    height: 300px;
+}
+
+.groomweardataContainer .commonContainer .commonCard{
+    height: 500px;
+}
+.groomweardataContainer .commonContainer .commonCard img{
+    height: 250px;
+}
+
+.gallerydataContainer .commonContainer .commonCard{
+    height: 300px;
+    width: 400px;
+}
+.gallerydataContainer .commonContainer .commonCard:hover{
+    opacity: 0.8;
+}
+
+/* Generic things end here */
+
+
+/* Login starts here*/
+
+
+/* Full-width input fields */
+
+.incorrectcredentials{
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+label.forSignup{
+    font-weight: bold;
+}
+
+.login{
+    width: 40% !important;
+    /* height: 100vh !important; */
+}
+.logincontainer input[type=text],.logincontainer input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.maincontainer button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto !important;
+  padding: 10px 18px;
+  background-color: #f44336 !important;
+}
+
+/* Center the image and position the close button */
+.txtlogincontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  font-size: 70%;
+}
+
+
+.logincontainer {
+  padding: 16px;
+}
+span.close{
+    /* font-size: 2vw;
+    float: top;
+     */
+    display: none;
+}
+span.signup {
+  float: right;
+  padding-top: 16px;
+}
+span.signup a{
+    color: #888;
+    transition: 0.4s ease-in;
+}
+span.signup a:hover{
+    color: black;
+    transition: 0.4s ease-in;
+}
+
+/* The maincontainer (background) */
+.maincontainer {
+  display: none;
+   /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* maincontainer Content/Box */
+.login {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.logincontainer .vanish:hover{
+    cursor: pointer;
+}
+.logincontainer input[type=]
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 600px) {
+  .login{
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  span.signup {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100% !important;
+  }
+  .login{
+    width: 100% !important;
+  }
+}
+
+/* Login ends here*/
+/* home page */
+.home-page {
+    /* position: relative; */
+    left: 0;
+    background: url("../assets/imgs/2.png");
+    width: 100vw;
+    height: 800px;
+    /* height: 100vh; */
+    background-size: cover;
+    /* background-size: 100vw 100vh; */
+    /* background-size: auto; */
+}
+
+/* services */
+.services .carousel{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.services .carousel-inner{
+    width: 60vw;
+    height: 80vh;
+    background-size: cover;
+    position: absolute;
+}
+
+.services .carousel .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+
+.services .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.services .carousel .carousel-inner .carousel-item .carousel-caption{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+.services .carousel .carousel-inner .carousel-item h6{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.services .carousel .carousel-inner .carousel-item:hover img{
+    opacity: 0.3;
+}
+
+.services .carousel .carousel-inner .carousel-item:hover .carousel-caption{
+    opacity: 1;
+}
+
+.services .carousel .carousel-inner .carousel-item:hover h6{
+    opacity: 0;
+}
+
+.plans .combo-plans{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content:center ;
+    /* justify-items: center; */
+}
+.plans .combo-plans .card h1{
+    text-align: center;
+    color: #8AAAE5;
+}
+.plans .combo-plans .card{
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 2rem;
+    padding: 2rem;
+    /* text-align: center; */
+    /* flex: 25%; */
+    /* position: absolute; */
+    /* display: block; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}   
+
+.fa-solid.fa-check{
+    color: green;
+}
+.fa-solid.fa-xmark{
+    color: red;
+}
+.plans{
+    width: 100%;
+    height: 100%;
+}
+.plans .combo-plans .card ul{
+    list-style: none;
+}
+
+.plans .combo-plans .card button{
+    border: none;
+    outline: 0;
+    padding: .5vw;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.plans .combo-plans .card button:hover {
+    opacity: 0.7;
+}
+
+
+/* plans page starts here */
+.planspage{
+    height: 100%;
+}
+.planspage .combo-plans .card button{
+    text-align: center;
+    /* color: #E2D3F4; */
+    background: #337def;
+    color:  white;
+    width: 100%;
+}
+
+/* plans page ends here */
+.homepageCustomers{
+    height: 100%;
+    margin-bottom: 5%;
+}
+.customers{
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.customers .images a{
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+.customers .images a img{
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.5);
+    max-width: 25%;
+    margin: 2%;
+    /* margin-bottom: 3vw; */
+    opacity: 1;
+}
+
+.customers .images a img:hover{
+    opacity: 0.3;
+}
+
+.customers .a,center a{
+    text-decoration: none;
+    color: blue;
+    font-size: 150%;
+}
+
+
+.footer{
+    background-color: #000;
+    color: white;
+    margin-bottom: 0;
+    bottom: 0;
+    /* position: fixed; */
+    width: 100%;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    color: #f8ce0b;
+}
+.footer .upperbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer .message{
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+.footer .social-media a{
+    text-decoration:  none;
+}
+
+.footer .planning{
+    display: flex;
+    flex-direction: column;
+}
+.footer .planning .totalpart{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.fa-facebook{
+    color: white;
+}
+.fa-twitter{
+    color: white;
+    /* color: #1DA1F2; */
+}
+.fa-youtube{
+    color: white;
+    /* color: #FF0000; */
+}
+.fa-instagram{
+    color: white;
+    /* color: #E1306C; */
+}
+.fa-linkedin{
+    color: white;
+    /* color: #0077b5; */
+}
+
+
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+
+}
+.contact h1{
+    text-align: center;
+    font-size: 5vw;
+}
+.contact .card{
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    text-align: center;
+}
+.contact .card form{
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.2);
+    max-width: 30vw;
+    margin: 2vw;
+    padding: 2vw;
+    text-align: left;
+    /* flex: 25%; */
+    /* position: absolute; */
+    display: block;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 1.2vw;
+} 
+
+
+
+/* Cart Page Starts Here */
+.cartPage{
+    height: 100%;
+}
+.nocartitems{
+    max-width: 80%;
+    max-height: 30%;
+}
+.cartTable{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 5%;
+}
+.cartTable img{
+    width: 100%;
+    height: 100%;
+}
+.cartTable th{
+    border: 1px solid #ddd;
+    padding: 1%;
+    font-weight: 200;
+}
+.cartTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.cartTable tr:hover{
+    background-color: #ddd;
+}
+.cartTable .commonCartHeading{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+}
+.cartTable .commonCartHeading th{
+    font-weight: bold;
+}
+.cartTable .commonCartHeading:hover{
+    background-color: #04AA6D;
+}
+
+
+.costSection{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 15% 10% 15%;
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.4);
+}
+.costSection div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+.costSection .totalCost{
+    font-weight: bold;
+    font-size: large;
+}
+.costSection hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: black;
+    height: 2px;
+    font-weight: bold;
+  }
+
+
+.costSection button{
+    width: 20%;
+    background-color: gold;
+    border: none;
+    margin-bottom: 5%;
+    padding: 1%;
+    font-size: large;
+    color: white;
+}
+/* Cart Page Ends Here */
+/* Services Page Starts Here */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    /* margin: 3%; */
+    /* background: green; */
+    justify-content: center;
+    background-color: #fbfbfb;
+
+}
+
+.container .card{
+    /* margin: 3%; */
+    /* padding: 1%; */
+    /* margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%; */
+    margin: 2.5%;
+    width: 500px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fbfbfb;
+    /* background: yellow; */
+}
+.container .card .element img{
+    width: 200px;
+    height: 150px;
+}
+
+.container .card .element{
+    margin: 5%;
+    opacity: 1;
+    transition: .4s ease;
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.4);
+    /* background: gold; */
+    background: linear-gradient(to right, #F9ED4E,#F6B042);
+    color: #533549;
+    /* background: #533549;  */
+    /* background: #D2302C; */
+    /* color: #F7F7F9; */
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+    flex-grow: 1;
+    text-decoration: none;
+    
+}
+.container .card .element p{
+    /* background: -webkit-linear-gradient( #F6B042 , #F9ED4E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    padding: 0;
+    /* margin: 0; */
+    margin-left: 4%;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.container .card .element:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* Services Page Ends Here */
+
+
+.container.home .card{
+    height: 180px;
+}
+
+.container.home .element {
+    height: 180px;
+    /* padding-left: 25%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container.home .element p{ 
+     margin-right: 5%;
+}
+/* Venue Page Starts Here */
+
+
+
+
+
+
+
+/* Style the search field */
+
+.search-panel{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.search{
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    margin-left: 35%;
+    max-width:35vw;
+}
+.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+.search  i {
+    float: left;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+    .search{
+        margin-left: 5%;
+        max-width: 350px;
+    }
+}
+  /* Clear floats */
+.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#filterBy{
+    border: none;
+    height: 100%;
+}
+
+.stars{
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+}
+
+.stars::before{
+    content: "\f006 \f006 \f006 \f006 \f006";
+}
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+.stars-inner::before {
+content: "\f005 \f005 \f005 \f005 \f005";
+color: #f8ce0b;
+/* color: orange; */
+}
+/* .stars{
+    color: orange;
+} */
+
+.venues-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fbfbfb;
+
+}
+
+.venues-container .card{
+    width: auto;
+    height: 350px;
+    margin: 5%;
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+}
+
+.venues-container .card img{
+    width: auto;
+    height: 150px;
+}
+
+
+.pagination{
+    text-align: center;
+    margin: 5%;
+}
+.pagination a{
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.pagination a:hover{
+    background-color: #00c8fd;
+    color: white;
+}
+
+
+
+.changePage{
+    text-decoration: none;
+    font-size: 30px;
+    color:#00c8fd;
+    padding: 1vw;
+    border-radius: 50%;
+    /* background-color: #f1f1f1; */
+}
+#activePage{
+    color: blue;
+}
+#activePage:hover{
+    color:white;
+}
+.chanePage:hover{
+    color: white;
+    font-size: 30px;
+}
+
+
+/* Venue Page Ends Here */
+
+
+/* cards page starts here*/
+
+.gen-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fbfbfb;
+}
+
+.gen-container .card{
+    box-shadow: 0 .4vh .8vw 0 rgba(0, 0, 0, 0.4);
+    width: 300px;
+    height: 522.5px;
+    margin: 5%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gen-container .card img{
+    width: 300px;
+    height: 350px;
+}
+.gen-container .card button{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 0;
+    border: none;
+    background: gold;
+    color: white;
+}
+
+.gen-container .card button:hover{
+    transition: 0.4s ease;
+    cursor: pointer;
+    background: lightblue;
+    color: white;
+}
+
+
+/* Decoration starts here */
+
+.gen-container .decoration{
+    width: 325px;
+    height: 460px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.gen-container .decoration img{
+    width: 325px;
+    height: 250px;
+}
+
+.gen-container .decoration button{
+    width: 325px;
+}
+
+/* Decoration ends here */
+
+
+
+/* Catering Starts here */
+
+.gen-container .catering{
+    height: 380px;
+}
+
+.gen-container .catering img{
+    height: 200px;
+}
+
+/* Catering Ends here */
+/* .cropped { */
+/* width: 400px;  */
+/* height: 300px;  */
+/* overflow: hidden; */
+/* } */
+
+/* .cropped img { */
+/* margin: -30px 0px 0px -350px; */
+/* margin: -80px 0px 0px -50px; */
+/* style="margin: -80px 0px 0px -300px;" */
+/* } */
+
+
+/* cards page ends here */
+
+
+/* Contact page starts here */
+
+.front{
+    background: #00c8fd;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+.front h1{
+    font-size: 4vw;
+    padding-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.container-contact-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container-contact-1 .box{
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contact-1 .box i{
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+
+.container-contact-2 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contact-2 form .box-out{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-contact-2 form .box-out .box{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container-contact-2 form .box-out .box textarea{
+    width: 100%;
+    height: 100%;
+}
+
+.container-contact-2 input[type=text], select, textarea{
+    /* width: 100%; */
+    padding: 4%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    resize: none;
+} 
+
+.container-contact-2 input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin:2%;
+}
+
+.container-contact-2 input[type=submit]:hover {
+    /* background-color: #45a049; */
+    background-color: lightblue;
+    color: white;
+}
+
+.container-contact-2 {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Contact page ends here */
+
+
+
+
+
+
+/* write media query for width <1050 to change background image */
+
+@media screen and (max-width: 1050px) {
+    .home-page{
+        background: url("../assets/imgs/6.png");
+        width: 100vw;
+        height: 600px;
+        background-size: cover;
+    } 
+}
+
+/* write media query for width <500 to change background image */
+
+@media screen and (max-width: 500px) {
+    .home-page{
+        background: url("../assets/imgs/7.png");
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-size: cover;
+    }
+    .container .card .element p{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .services .carousel .carousel-inner .carousel-item:hover h6{
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    /* .customers .images a img{
+        flex-direction: column;
+        flex: 25%;
+    } */
+    /* .container .card .element p{
+        font-size: 1rem;
+        margin-left: 5%;
+        padding-left: 15%;
+    } */
+    .container .card .element img{
+        width: 55%;
+    }
+}
