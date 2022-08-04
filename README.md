@@ -1,5 +1,7 @@
 # Major
  Skill Vertex Project
+ 
+ YouTube link for project demonstration : https://youtu.be/4h_SWHwu66I
  # Wedding Planner Website
  
  --> assets <br/>
